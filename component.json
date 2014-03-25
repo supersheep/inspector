@@ -1,0 +1,19 @@
+{
+  "name": "inspector",
+  "repo": "supersheep/inspector",
+  "description": "Inspector your web page easily",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "cristiandouce/sizzle": "*",
+    "component/emitter": "*",
+    "supersheep/dyer": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "remotes": []
+}

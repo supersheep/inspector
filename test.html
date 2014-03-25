@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="a">a</div>
+  <div id="b">b</div>
+  <div id="c">c</div>
+  <div id="d">d</div>
+
+  <button onclick="inspector.toggleActive();">toggleActive</button>
+
+  <script src="build/build.js"></script>
+  <script>
+    var Inspector = require("inspector");
+    var inspector = new Inspector({
+      active:true
+    });
+    inspector.on("pick", function(e, elem){
+      console.log(elem);
+    });
+  </script>
+
+</body>
+</html>

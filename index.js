@@ -28,6 +28,7 @@ function Inspector(opt){
     doc.addEventListener("click", function(e){
         if(self._active){
             e.stopPropagation();
+            e.preventDefault();
             self.emit("pick",e, e.target);
         }
     });

@@ -17,7 +17,8 @@
   <script>
     var Inspector = require("inspector");
     var inspector = new Inspector({
-      active:true
+      active:true,
+      every:true
     });
     inspector.on("pick", function(e, elem){
       console.log(elem);
